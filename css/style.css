@@ -1,0 +1,77 @@
+header,
+footer,
+.sections {
+    position:absolute;
+    left:50%;
+    margin-left:-500px;
+    width:1000px;
+}
+header {
+    top:0px;
+    height:100px;
+}
+footer {
+    bottom:0px;
+    height:100px;
+}
+.sections {
+    top:100px;
+    bottom:100px;
+}
+
+section {
+    top:0;
+    position:absolute;
+    width:48%;
+}
+#lists {
+    left:0;
+}
+#details {
+    right:0;
+}
+.ui-accordion .ui-accordion-content {
+    padding:0;
+}
+
+#pendingcount:before {
+    content:'(';
+}
+#pendingcount:after {
+    content:')';
+}
+
+ul.orderlist {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+#pendinglist {
+    font-weight:bold;
+}
+
+.orderlist li {
+    clear:both;
+    border-top: 1px solid black;
+    font-size:90%;
+}
+
+.orderlist .datetime {
+    float:left;
+}
+.orderlist .contacts {
+    float:right;
+    text-align:right;
+}
+.orderlist .total {
+    text-align:center;
+    font-size:160%;
+}
+
+.orderlist .phone:before {
+    content:'Tel: ';
+}
+.orderlist .total:after {
+    content:' €';
+}
