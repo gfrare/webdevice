@@ -85,6 +85,17 @@ ul.orderlist {
     content:' €';
 }
 
+#details h1 .buttons {
+    font-size:80%;
+    float:right;
+}
+#details h1:after {
+    clear:both;
+    content:'_';
+    display:block;
+    height:0;
+    visibility:hidden;
+}
 #details .orderid:before {
     content:'Ordine N. ';
 }

@@ -33,5 +33,6 @@ $(function(){
         refreshMap();
     });
 
-
+    $('button.accept').button({icons: {primary: "ui-icon-check"}});
+    $('button.reject').button({icons: {primary: "ui-icon-closethick"}});
 });
