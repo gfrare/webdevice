@@ -44,7 +44,7 @@ section {
 ul.orderlist {
     list-style-type:none;
     padding:0;
-    margin:0 0 0.7em 0;
+    margin:0.7em 0;
 }
 
 #pendinglist {
@@ -52,7 +52,7 @@ ul.orderlist {
 }
 
 .orderlist li {
-    border-top: 1px solid black;
+    border-top: 1px solid;
     font-size:90%;
 }
 .orderlist li:after {
@@ -63,7 +63,7 @@ ul.orderlist {
     visibility:hidden;
 }
 .orderlist li:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
 }
 
 .orderlist .datetime {
@@ -109,7 +109,7 @@ ul.orderlist {
 }
 #details .contacts {
     clear:both;
-    border-bottom:1px solid black;
+    border-bottom:1px solid;
 }
 #details .name:before {
     content:'Citofono: ';
@@ -127,8 +127,8 @@ ul.orderlist {
     margin:0.7em 0;
 }
 .detailtable td {
-    border-top:1px solid black;
-    border-bottom:1px solid black;
+    border-top:1px solid;
+    border-bottom:1px solid;
 }
 
 .detailtable .quantity {
@@ -198,3 +198,13 @@ ul.orderlist {
     margin-top:0.7em;
 }
 
+.ui-widget-content,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.orderlist li,
+.orderlist li:last-child,
+#details .contacts,
+.detailtable td {
+    border-color:#D8DCDF;
+}
