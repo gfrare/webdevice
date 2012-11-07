@@ -103,15 +103,18 @@ ul.orderlist {
 }
 #details .orderid {
     font-weight:bold;
+    padding:0 0.4em;
 }
 #details .datetime {
     float:right;
     font-weight:bold;
     text-align:right;
+    padding:0 0.4em;
 }
 #details .contacts {
     clear:both;
     border-bottom:1px solid;
+    padding:0 0.4em;
 }
 #details .name:before {
     content:'Citofono: ';
@@ -135,6 +138,8 @@ ul.orderlist {
 
 .detailtable .quantity {
     vertical-align:top;
+    width:1.4em;
+    padding-left:0.4em;
 }
 .detailtable .quantity:after {
     content:'x';
@@ -180,6 +185,7 @@ ul.orderlist {
 .detailtable .price {
     text-align:right;
     vertical-align:top;
+    padding-right:0.4em;
 }
 
 #details .total:before {
@@ -189,6 +195,7 @@ ul.orderlist {
 #details .total {
     font-weight:bold;
     text-align:right;
+    padding:0 0.4em;
 }
 
 #details .notes:before {
@@ -198,6 +205,7 @@ ul.orderlist {
 #details .notes {
     text-transform:uppercase;
     margin-top:0.7em;
+    padding:0 0.4em;
 }
 
 .ui-widget-content,
