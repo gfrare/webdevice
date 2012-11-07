@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(function(){
     $("section").accordion({heightStyle:"fill", icons:false, header:'h1'});
-    //$("section").accordion("refresh");
+    $(window).resize(function(){
+        $("section").accordion("refresh");
+    });
 });
