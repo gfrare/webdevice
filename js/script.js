@@ -34,8 +34,8 @@ $(function(){
                 left:0
             });
             $('<button class="windowed">Chiudi</button>').button().appendTo(this.$element).click(function(){ $(this).closest('#'+elementId).data('map').windowed(); });
-            this.refresh();
             this.status = 'fullscreen';
+            this.refresh();
         };
         this.windowed = function() {
             this.$element.appendTo('.map_container').css({
@@ -44,8 +44,8 @@ $(function(){
                 height:'100%'
             });
             this.$element.find('button.windowed').remove();
-            this.refresh();
             this.status = 'windowed';
+            this.refresh();
         }
     }
 
