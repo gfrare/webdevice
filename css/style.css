@@ -8,15 +8,15 @@ footer,
 }
 header {
     top:0px;
-    height:100px;
+    height:70px;
 }
 footer {
     bottom:0px;
-    height:100px;
+    height:50px;
 }
 .sections {
-    top:100px;
-    bottom:100px;
+    top:70px;
+    bottom:50px;
 }
 
 section {
@@ -44,7 +44,7 @@ section {
 ul.orderlist {
     list-style-type:none;
     padding:0;
-    margin:0;
+    margin:0 0 0.7em 0;
 }
 
 #pendinglist {
@@ -52,9 +52,18 @@ ul.orderlist {
 }
 
 .orderlist li {
-    clear:both;
     border-top: 1px solid black;
     font-size:90%;
+}
+.orderlist li:after {
+    clear:both;
+    content:'_';
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+.orderlist li:last-child {
+    border-bottom: 1px solid black;
 }
 
 .orderlist .datetime {
@@ -75,3 +84,106 @@ ul.orderlist {
 .orderlist .total:after {
     content:' €';
 }
+
+#details .orderid:before {
+    content:'Ordine N. ';
+}
+#details .orderid {
+    font-weight:bold;
+}
+#details .datetime {
+    float:right;
+    font-weight:bold;
+    text-align:right;
+}
+#details .contacts {
+    clear:both;
+    border-bottom:1px solid black;
+}
+#details .name:before {
+    content:'Citofono: ';
+}
+#details .address {
+    font-weight:bold;
+}
+#details .phone {
+    float:right;
+}
+
+.detailtable {
+    width:100%;
+    border-collapse:collapse;
+    margin:0.7em 0;
+}
+.detailtable td {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.detailtable .quantity {
+    vertical-align:top;
+}
+.detailtable .quantity:after {
+    content:'x';
+}
+.detailtable .product_name {
+    text-transform:uppercase;
+    display:inline;
+}
+.detailtable.menu .product_name {
+    font-style:italic;
+}
+.detailtable .product_type {
+    display:inline;
+}
+.detailtable .product_type:before {
+    content:' (';
+}
+.detailtable .product_type:after {
+    content:')';
+}
+
+.detailtable ul.product_add:before {
+    content:'con: ';
+}
+.detailtable ul.product_remove:before {
+    content:'senza: ';
+}
+.detailtable ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.detailtable li {
+    display:inline;
+}
+.detailtable li:after {
+    content:', ';
+}
+.detailtable li:last-child:after {
+    content:'.';
+}
+
+.detailtable .price {
+    text-align:right;
+    vertical-align:top;
+}
+
+#details .total:before {
+    content:'TOTALE';
+    float:left;
+}
+#details .total {
+    font-weight:bold;
+    text-align:right;
+}
+
+#details .notes:before {
+    display:block;
+    content:'NOTE:';
+}
+#details .notes {
+    text-transform:uppercase;
+    margin-top:0.7em;
+}
+

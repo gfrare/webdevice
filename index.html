@@ -14,6 +14,7 @@
         <script src="js/console.js"></script>
         <script src="js/jquery-1.8.2.js"></script>
         <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgRpok_VhCPtG96o1ngnBcHQrK_YDPMd0&sensor=false"></script>
         <script src="js/script.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/jquery-ui-1.9.1.custom.min.css">
@@ -114,9 +115,91 @@
 
             <section id="details">
                 <h1>Dettaglio dell'ordine</h1>
-                <div>ordine...</div>
+                <div>
+                    <div class="datetime">
+                        <div class="date">5 nov 2012</div>
+                        <div class="time">22.57</div>
+                    </div>
+                    <div class="orderid">33</div>
+                    <div class="contacts">
+                        <div class="address">Via Tito Livio 8C, Milano</div>
+                        <div class="phone">3475622797</div>
+                        <div class="name">Gianluigi Frare</div>
+                    </div>
+
+                    <table class="detailtable">
+                        <tr>
+                            <td class="quantity">2</td>
+                            <td>
+                                <div class="product_name">Margherita</div>
+                                <div class="product_type">pizza rotonda</div>
+                            </td>
+                            <td class="price">10,00</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">1</td>
+                            <td>
+                                <div class="product_name">Diavola</div>
+                                <div class="product_type">pizza rotonda</div>
+                                <ul class="product_add">
+                                    <li>peperoni</li>
+                                    <li>patatine</li>
+                                </ul>
+                                <ul class="product_remove">
+                                    <li>pomodoro</li>
+                                    <li>mozzarella</li>
+                                </ul>
+                            </td>
+                            <td class="price">7,50</td>
+                        </tr>
+                    </table>
+
+                    <table class="detailtable">
+                        <tr>
+                            <td class="quantity">2</td>
+                            <td>
+                                <div class="product_name">Coca cola</div>
+                                <div class="product_type">lattina</div>
+                            </td>
+                            <td class="price">4,00</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">2</td>
+                            <td>
+                                <div class="product_name">Acqua</div>
+                                <div class="product_type">lattina</div>
+                            </td>
+                            <td class="price">4,00</td>
+                        </tr>
+                    </table>
+
+                    <table class="detailtable">
+                        <tr>
+                            <td class="quantity">1</td>
+                            <td>
+                                <div class="product_name">Coca cola omaggio</div>
+                                <div class="product_type">tinozza</div>
+                            </td>
+                            <td class="price">0,00</td>
+                        </tr>
+                    </table>
+
+                    <table class="detailtable menu">
+                        <tr>
+                            <td class="quantity">1</td>
+                            <td>
+                                <div class="product_name">Menu pizza margherita</div>
+                            </td>
+                            <td class="price">-3,00</td>
+                        </tr>
+                    </table>
+
+                    <div class="total">2135,21</div>
+
+                    <div class="notes">L'ascensore è rotto, usare le scale.</div>
+                </div>
                 <h1>Guarda la Mappa</h1>
-                <div>mappa...</div>
+                <div><div id="map_canvas" style="width: 100%; height: 100%"></div></div>
             </section>
         </div>
 
