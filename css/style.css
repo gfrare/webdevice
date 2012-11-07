@@ -54,6 +54,7 @@ ul.orderlist {
 .orderlist li {
     border-top: 1px solid;
     font-size:90%;
+    padding:0.1em 0.4em;
 }
 .orderlist li:after {
     clear:both;
@@ -76,6 +77,7 @@ ul.orderlist {
 .orderlist .total {
     text-align:center;
     font-size:160%;
+    line-height:1.6em;
 }
 
 .orderlist .phone:before {
