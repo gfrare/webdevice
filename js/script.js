@@ -17,6 +17,11 @@ $(function(){
         );
         this.marker = new google.maps.Marker({ map:this.map, clickable:false, position:this.position });
         this.refresh = function() {
+            if (this.status == 'fullscreen')
+                this.$element.css({
+                    height:$(window).height(),
+                    width:$(window).width()
+                });
             google.maps.event.trigger(this.map, 'resize');
             this.map.setCenter(this.position);
         };
