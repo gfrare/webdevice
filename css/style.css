@@ -212,6 +212,14 @@ ul.orderlist {
     padding:0 0.4em;
 }
 
+button.windowed {
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:10em;
+    margin-left:-5em;
+}
+
 .ui-widget-content,
 .ui-state-active,
 .ui-widget-content .ui-state-active,
