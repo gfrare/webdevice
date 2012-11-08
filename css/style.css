@@ -85,10 +85,6 @@ ul.orderlist {
     line-height:1.6em;
 }
 
-.orderlist .phone:before {
-    content:'Tel: ';
-}
-
 #details h1 .buttons {
     font-size:80%;
     float:right;
