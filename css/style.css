@@ -96,9 +96,6 @@ ul.orderlist {
     height:0;
     visibility:hidden;
 }
-#details .orderid:before {
-    content:'Ordine N. ';
-}
 #details .orderid {
     font-weight:bold;
     padding:0 0.4em;
@@ -112,9 +109,6 @@ ul.orderlist {
 #details .contacts {
     clear:both;
     padding:0 0.4em;
-}
-#details .name:before {
-    content:'Citofono: ';
 }
 #details .address {
     font-weight:bold;
@@ -143,33 +137,40 @@ ul.orderlist {
 }
 .detailtable .product_name {
     text-transform:uppercase;
-    display:inline;
+    float:left;
+    clear:left;
 }
 .detailtable.menu .product_name {
     font-style:italic;
 }
 .detailtable .product_type {
-    display:inline;
+    float:left;
+    margin-left:0.35em;
 }
 .detailtable .product_type:before {
-    content:' (';
+    content:'(';
 }
 .detailtable .product_type:after {
     content:')';
 }
 
-.detailtable ul.product_add:before {
-    content:'con: ';
-}
-.detailtable ul.product_remove:before {
-    content:'senza: ';
-}
-.detailtable ul {
-    list-style-type:none;
+.detailtable h3.list_title {
+    font-size:100%;
+    font-weight:normal;
     margin:0;
+    clear:left;
+    float:left;
+}
+.detailtable h3.list_title:after {
+    content:': ';
+}
+.detailtable ul.list {
+    list-style-type:none;
+    float:left;
+    margin:0 0 0 0.35em;
     padding:0;
 }
-.detailtable li {
+.detailtable ul.list li {
     display:inline;
 }
 .detailtable li:after {
@@ -185,9 +186,11 @@ ul.orderlist {
     padding-right:0.4em;
 }
 
-#details .total:before {
-    content:'TOTALE';
+#details .total h3 {
+    font-size:100%;
+    margin:0;
     float:left;
+    text-transform:uppercase;
 }
 #details .total {
     font-weight:bold;
@@ -195,9 +198,15 @@ ul.orderlist {
     padding:0 0.4em;
 }
 
-#details .notes:before {
-    display:block;
-    content:'NOTE:';
+
+#details .notes h3 {
+    font-size:100%;
+    font-weight:normal;
+    margin:0;
+    text-transform:uppercase;
+}
+#details .notes h3:after {
+    content:':';
 }
 #details .notes {
     text-transform:uppercase;
