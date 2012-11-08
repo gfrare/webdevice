@@ -88,9 +88,6 @@ ul.orderlist {
 .orderlist .phone:before {
     content:'Tel: ';
 }
-.orderlist .total:after {
-    content:' €';
-}
 
 #details h1 .buttons {
     font-size:80%;
